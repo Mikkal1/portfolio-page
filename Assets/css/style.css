@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EDEDF6;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #31343D;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 32px;
+    background-color: #92CCCD;
+    color: #31343D;
+    padding: 10px 10px 10px 50px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    color: #92CCCD;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: overline;
+}
+
+p {
+    font-size: 16px;
+}
+
+.banner {
+    position: relative;
+    margin: 0;
+}
+
+.banner section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  z-index: 2;
+}
+
+.banner section:last-child {
+  z-index: 1;
+}
+
+figure {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/banner.jpg);
+}
+
+figure img {
+    width: 360px;
+    height: 400px;
+    object-fit: cover;
+}
+
+figure p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-left: 360px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+body article {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #445876;
+    display: flex;
+}
+
+section img {
+    max-height: 200px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    flex: 0 0 30%;
+    width: 25%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+section article {
+    font-size: 18px;
+    border-left-color: #445876;
+    border-left-style: solid;
+    border-left-width: 3px;
+    flex: 1;
+    margin: 0;
+    padding-left: 20px;
+}
+
+section article p {
+    margin-bottom: 20px;
+}
+
+section figure {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+section figure image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section figure figcaption {
+    position: absolute;
+    bottom: 0pt;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#work-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px; /* Adjust the gap between images as needed */
+ }
+
+ #work-images figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ #work-images img:hover {
+    transform: scale(1.1); /* Increase the scale factor for more noticeable growth */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+ }
+
+ #work-images figure:first-child {
+    grid-column: span 2; /* Make the first image span both columns */
+ }
+
+#contact-me article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-me a {
+   flex: 1;
+   margin: 0;
+   color: #445876;
+   padding: 20px;
+}
+
+#contact-me a:hover {
+   text-decoration: underline;
+}
